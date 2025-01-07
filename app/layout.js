@@ -6,6 +6,16 @@ const geistSans = Geist({
   subsets: ["latin"],
   
 });
+const ovo = Ovo({
+  variable: '--font-ovo',
+  subsets: ['latin'],
+  weight: ['400',],
+})
+const outfit = Outfit({
+  variable: '--font-outfit',
+  subsets:['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+})
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
@@ -19,9 +29,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${ovo.variable} ${outfit.variable} antialiased leading-8 overflow-x-hidden`}
       >
         {children}
       </body>

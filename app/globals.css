@@ -2,8 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-* {
-  font-family: Geist;
+
+*{
+  font-family: "Ova";
 }
 html::before {
   content: "";
