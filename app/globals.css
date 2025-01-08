@@ -2,14 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-
-*{
+* {
   font-family: "Ova";
 }
 html::before {
   content: "";
   display: block;
-  background-image: url("./assets/bg.jpeg");
+  background-image: url("./assets/bg1.jpg");
   background-position: center;
   background-size: cover;
   height: 100vh;

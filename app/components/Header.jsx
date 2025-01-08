@@ -5,11 +5,11 @@ import download from './../assets/download.png'
 
 const Header = () => {
   return (
-    <div className='flex flex-col justify-center  mx-10 md:mx-20 mt-40 p-10 gap-10 bg-slate-100 rounded-3xl bg-opacity-40 shadow-xl text-slate-700 '>
+    <div className='flex flex-col justify-center  mx-10 md:mx-20 mt-40 p-10 gap-10 bg-slate-300 rounded-3xl bg-opacity-40 shadow-xl text-slate-700 '>
        <div>
    <h1 className='text-xl md:text-3xl font-Outfit   text-right'>Building the future of the web - <br /> one line of code at a time.</h1>
         </div> 
-        <h1 className='text-center text-3xl md:text-5xl font-Outfit font-bold'>Web Developer</h1>
+        <h1 className='text-center text-3xl md:text-5xl font-Outfit font-bold'><span className='text-red-600'>W</span>eb Developer</h1>
         <h1 className='text-center md:text-xl'>Hi! My name is Olga Jean-Baptiste and I am a Full Stack developer based in North Carolina, USA.</h1>
 
         <div className='flex gap-5 justify-center'>

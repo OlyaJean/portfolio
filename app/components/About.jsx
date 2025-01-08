@@ -6,9 +6,9 @@ import { assets, myInfo } from '../assets/assets'
 
 const About = () => {
   return (
-    <div id='about' className=' p-10 scroll-mt-20  bg-slate-100 rounded-3xl bg-opacity-40 shadow-xl mx-10 md:mx-20'>
+    <div id='about' className=' p-10 scroll-mt-20  bg-slate-300 rounded-3xl bg-opacity-40 shadow-xl mx-10 md:mx-20'>
         <h4 className='text-center text-2xl text-slate-700 mb-5'>Introduction</h4>
-        <h1 className='text-center text-4xl text-slate-700'>About me</h1>
+        <h1 className='text-center text-4xl text-slate-700'><span className='text-red-600'>A</span>bout me</h1>
 
         <div className='flex flex-col lg:flex-row items-center lg:items-start my-10'>
             <Image alt='' width='' src={me} className='rounded-3xl mb-5 mr-5 w-[200px] lg:w-[300px]'/>
