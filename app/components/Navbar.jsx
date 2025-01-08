@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React, { useRef } from 'react'
-import logo from './../assets/logo.png'
+
 import arrowRight from './../assets/arrowRight.png'
 import moonBlack from './../assets/moonBlack.png'
 import menu from './../assets/menu.png'
@@ -17,9 +17,9 @@ const Navbar = () => {
         menuRef.current.style.transform = 'translateX(-15rem)'
      }
   return (
-    <div className='flex justify-between items-center py-5 px-10 fixed z-50 w-full '>
+    <div className='flex justify-between items-center py-5 px-10 fixed z-50 w-full top-0'>
       <a href="#home">
-       <button className='text-xl lg:w-48'>Olya.Jean</button>
+       <button className=' font-Outfit italic text-4xl font-extrabold text-slate-700'><span className='text-red-500 text-4xl font-extrabold'>//</span>O<span className='text-red-500 text-5xl font-extrabold'>.</span>Jean <br className='leading-none'/> </button>
       </a>
 
       <ul className='hidden md:flex gap-5 bg-opacity-30 bg-slate-100 px-5 py-3 rounded-3xl shadow-xl'>

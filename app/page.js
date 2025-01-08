@@ -6,8 +6,10 @@ import Navbar from "./components/Navbar";
 export default function Home() {
   return (
     <div >
+      <div className="h-screen">
       <Navbar/>
       <Header/>
+      </div>
       <About/>
     </div>
   );
