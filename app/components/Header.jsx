@@ -5,7 +5,7 @@ import download from './../assets/download.png'
 
 const Header = () => {
   return (
-    <div className='flex flex-col justify-center  mx-10 md:mx-20 mt-40 p-10 gap-10 bg-slate-300 rounded-3xl bg-opacity-40 shadow-xl text-slate-700 '>
+    <div  className='flex  flex-col justify-center  mx-10 md:mx-20 mt-40 p-10 gap-10 bg-slate-300 rounded-3xl bg-opacity-40 shadow-xl text-slate-700 '>
        <div>
    <h1 className='text-xl md:text-3xl font-Ovo  text-right'>Building the future of the web - <br /> one line of code at a time.</h1>
         </div> 

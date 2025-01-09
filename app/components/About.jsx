@@ -6,17 +6,17 @@ import { assets, myInfo, tools, toolsData } from '../assets/assets'
 
 const About = () => {
   return (
-    <div id='about' className=' p-10 scroll-mt-20  bg-slate-300 rounded-3xl bg-opacity-40 shadow-xl mx-10 md:mx-20'>
+    <div id='about' className='mb-10 md:mb-20 p-10 scroll-mt-20  bg-slate-300 rounded-3xl bg-opacity-40 shadow-xl mx-10 md:mx-20'>
         <h4 className='text-center text-2xl text-slate-700 mb-5'>Introduction</h4>
         <h1 className='text-center text-4xl text-slate-700'><span className='text-red-600'>A</span>bout me</h1>
 
         <div className='flex flex-col lg:flex-row items-center  lg:items-center my-10'>
-            <Image alt='' width='' src={me} className='rounded-3xl mb-5 mr-5 w-[200px] lg:w-[300px]'/>
+            <Image alt='' width='' src={me} className='rounded-3xl mb-5 lg:mr-10 w-[200px] lg:w-[300px]'/>
             <div className='max-w-2xl'>
             <p className='flex-1 mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, temporibus dignissimos, corporis impedit necessitatibus consectetur odio cupiditate voluptates sit tempora autem similique ab nemo facere incidunt nesciunt adipisci nihil repellat.</p>
 
             <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl '>
-                {myInfo.map(({icon, title,description,index})=>(
+                {myInfo.map(({icon,title,description, index})=>(
                     <li key={index} className='border-[0.5px] rounded-xl border-gray-400 p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 hover:bg-opacity-35 duration-500 hover:shadow-black'>
                         <Image alt={title} src={icon} width='' className='w-7 mt-3'/>
                         <h3 className='my-4 font-semibold text-gray-700 '>{title}:</h3>

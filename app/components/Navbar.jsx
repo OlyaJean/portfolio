@@ -28,13 +28,13 @@ const Navbar = () => {
       })
      },[])
   return (
-    <div className='-z-10'>
-      <nav className={`flex justify-between items-center py-3 md:py-5 px-10 fixed z-50 w-full top-0 ${scrolled ? 'backdrop-blur-lg bg-slate-500 shadow-sm bg-opacity-10' : ""}`}>
+    <div className='-z-10' >
+      <nav className={`flex justify-between items-center py-1 md:py-3 px-10 fixed z-50 w-full top-0 ${scrolled ? 'backdrop-blur-lg bg-slate-500 shadow-lg bg-opacity-5' : ""}`}>
       <a href="#home">
        <button className=' font-Outfit italic text-2xl md:text-4xl font-extrabold text-slate-700'><span className='text-red-500 text-4xl font-extrabold'>//</span>O<span className='text-red-500 text-5xl font-extrabold'>.</span>Jean <br className='leading-none'/> </button>
       </a>
 
-      <ul className='hidden md:flex gap-5 bg-opacity-30 bg-slate-100 px-5 py-3 rounded-3xl shadow-xl'>
+      <ul className={`hidden md:flex gap-5  px-5 py-3 rounded-3xl  ${scrolled ? "" : " bg-opacity-30 bg-slate-100 shadow-xl"}`}>
         <li className='text-red-600'><a href="#home">Home</a></li>
         <li ><a href="#about">About me</a></li>
         <li ><a href="#services">Services</a></li>
@@ -45,11 +45,11 @@ const Navbar = () => {
 
       <div className='flex gap-5 items-center lg:w-48'>
         <button>
-            <Image src={moonBlack} alt='' width='30'/>
+            <Image src={moonBlack} alt='' width='' className='w-7 md:w-8'/>
         </button>
-        <a href="#contact" className='hidden lg:flex items-center gap-5 font-Ovo  bg-slate-200 bg-opacity-30 rounded-3xl px-5 py-2 shadow-xl font-semibold text-red-600'>Contact<Image src={arrowRight} alt='' width='30'/></a>
+        <a href="#contact" className='hidden lg:flex items-center gap-5 font-Ovo  bg-slate-100 bg-opacity-60 rounded-3xl px-5 py-2 border-[0.5px] border-gray-400 font-semibold text-red-600'>Contact<Image src={arrowRight} alt='' width='30'/></a>
         <button onClick={openMenuFunc} className='md:hidden'>
-            <Image src={menu} alt='' width='30'/>
+            <Image src={menu} alt='' width='' className='w-7'/>
         </button>
       </div>
       </nav>
@@ -65,7 +65,7 @@ const Navbar = () => {
         <li onClick={closeMenuFunc} ><a href="#work">My work</a></li>
         <li onClick={closeMenuFunc} ><a href="#contact">Contact me</a></li>
         <button onClick={closeMenuFunc}>
-            <Image src={close} alt='' width='30' className='absolute right-5 top-5'/>
+            <Image src={close} alt='' width='' className='absolute right-5 top-5 w-7'/>
         </button>
       </ul>
      
