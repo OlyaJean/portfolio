@@ -16,7 +16,7 @@ const About = () => {
             <p className='flex-1 mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, temporibus dignissimos, corporis impedit necessitatibus consectetur odio cupiditate voluptates sit tempora autem similique ab nemo facere incidunt nesciunt adipisci nihil repellat.</p>
 
             <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl '>
-                {myInfo.map(({icon,title,description, index})=>(
+                {myInfo.map(({icon,title,description}, index)=>(
                     <li key={index} className='border-[0.5px] rounded-xl border-gray-400 p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 hover:bg-opacity-35 duration-500 hover:shadow-black'>
                         <Image alt={title} src={icon} width='' className='w-7 mt-3'/>
                         <h3 className='my-4 font-semibold text-gray-700 '>{title}:</h3>

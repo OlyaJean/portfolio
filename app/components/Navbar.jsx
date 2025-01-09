@@ -29,7 +29,7 @@ const Navbar = () => {
      },[])
   return (
     <div className='-z-10' >
-      <nav className={`flex justify-between items-center py-1 md:py-3 px-10 fixed z-50 w-full top-0 ${scrolled ? 'backdrop-blur-lg bg-slate-500 shadow-lg bg-opacity-5' : ""}`}>
+      <nav className={`flex justify-between items-center py-1 md:py-3 px-10 fixed z-50 w-full top-0 ${scrolled ? 'backdrop-blur-lg bg-slate-500 shadow-lg bg-opacity-5 rounded-[_0_0_15px_15px]' : ""}`}>
       <a href="#home">
        <button className=' font-Outfit italic text-2xl md:text-4xl font-extrabold text-slate-700'><span className='text-red-500 text-4xl font-extrabold'>//</span>O<span className='text-red-500 text-5xl font-extrabold'>.</span>Jean <br className='leading-none'/> </button>
       </a>

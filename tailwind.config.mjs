@@ -9,6 +9,7 @@ export default {
     extend: {
       colors: {
       lightHover: '#fafcff',
+      redHover:'#fad7e5',
       darkHover: '2a004a',
       darkTheme: '#11001F'
       },
@@ -19,6 +20,9 @@ export default {
       boxShadow:{
         'white': '4px 4px 0 #fff',
         'black': '4px 4px 0 #000'
+      },
+      gridTemplateColumns:{
+        'auto': 'repeat(auto-fit, minmax(200px, 1fr))'
       }
     },
   },
