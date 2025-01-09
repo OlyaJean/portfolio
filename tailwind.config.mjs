@@ -19,7 +19,8 @@ export default {
       },
       boxShadow:{
         'white': '4px 4px 0 #fff',
-        'black': '4px 4px 0 #000'
+        'black': '4px 4px 0 #000',
+        'red':'4px 4px 0 #cf2929'
       },
       gridTemplateColumns:{
         'auto': 'repeat(auto-fit, minmax(200px, 1fr))'

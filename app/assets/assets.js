@@ -10,6 +10,7 @@ import webDevelopment from './../assets/web-development.png'
 import webDesign from './../assets/web-design.png'
 import uxUi from './../assets/ux-ui.png'
 import arrowRight from './../assets/arrowRight.png'
+import workBg from './../assets/work-bg.jpg'
 
 
 export const assets = {
@@ -24,7 +25,8 @@ export const assets = {
     webDesign,
     webDevelopment,
     uxUi,
-    arrowRight
+    arrowRight,
+    workBg
 }
 export const myInfo = [
     { icon: assets.languages, title: "Languages", description: "HTML, CSS, JavaScript, React Js, Next Js" },
@@ -45,4 +47,25 @@ export const serviceData = [
     },
     { icon: assets.uxUi, title: 'UX/UI Design', description: 'UX/UI together ensure that product is visually appealing and...', link: ''
     },
+]
+
+export const workData = [
+    { 
+        title: "The Infinite Expanse",
+        description: 'A Picture Of the Day (APOD) using NASA API including a random space fact.',
+        image: assets.workBg,
+        link: 'https://the-infinity-expanse.netlify.app/'
+    },
+    {
+        title: 'Study Sprint',
+        description: 'Manage your personal studing tasks with infinite Pomodoro clock.',
+        image: assets.workBg,
+        link: 'https://study-sprint.netlify.app/'
+    },
+    {
+        title: 'Avajah Pottery',
+        description: 'A full-stack e-commerce website built using Next Js and MongoDB.',
+        image: assets.workBg,
+        link: 'https://avajah.netlify.app/'
+    }
 ]
