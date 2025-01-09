@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image'
-import React, { useRef } from 'react'
-
+import React, { useEffect, useRef, useState } from 'react'
 import arrowRight from './../assets/arrowRight.png'
 import moonBlack from './../assets/moonBlack.png'
 import menu from './../assets/menu.png'
@@ -9,6 +8,7 @@ import close from './../assets/close.png'
 
 const Navbar = () => {
 
+    const [scrolled, setScrolled] = useState(false)
     const menuRef = useRef()
     const closeMenuFunc = () => {
        menuRef.current.style.transform = 'translateX(15rem)'
@@ -16,14 +16,26 @@ const Navbar = () => {
     const openMenuFunc = () => {
         menuRef.current.style.transform = 'translateX(-15rem)'
      }
+
+     useEffect(()=>{
+
+      window.addEventListener('scroll', ()=>{
+        if(scrollY > 50){
+            setScrolled(true)
+        }else{
+          setScrolled(false)
+        }
+      })
+     },[])
   return (
-    <div className='flex justify-between items-center py-5 px-10 fixed z-50 w-full top-0'>
+    <div className='-z-10'>
+      <nav className={`flex justify-between items-center py-3 md:py-5 px-10 fixed z-50 w-full top-0 ${scrolled ? 'backdrop-blur-lg bg-slate-500 shadow-sm bg-opacity-10' : ""}`}>
       <a href="#home">
-       <button className=' font-Outfit italic text-4xl font-extrabold text-slate-700'><span className='text-red-500 text-4xl font-extrabold'>//</span>O<span className='text-red-500 text-5xl font-extrabold'>.</span>Jean <br className='leading-none'/> </button>
+       <button className=' font-Outfit italic text-2xl md:text-4xl font-extrabold text-slate-700'><span className='text-red-500 text-4xl font-extrabold'>//</span>O<span className='text-red-500 text-5xl font-extrabold'>.</span>Jean <br className='leading-none'/> </button>
       </a>
 
       <ul className='hidden md:flex gap-5 bg-opacity-30 bg-slate-100 px-5 py-3 rounded-3xl shadow-xl'>
-        <li ><a href="#home">Home</a></li>
+        <li className='text-red-600'><a href="#home">Home</a></li>
         <li ><a href="#about">About me</a></li>
         <li ><a href="#services">Services</a></li>
         <li ><a href="#work">My work</a></li>
@@ -35,12 +47,12 @@ const Navbar = () => {
         <button>
             <Image src={moonBlack} alt='' width='30'/>
         </button>
-        <a href="#contact" className='hidden lg:flex items-center gap-5 font-Ovo  bg-slate-200 bg-opacity-30 rounded-3xl px-5 py-2 shadow-xl'>Contact<Image src={arrowRight} alt='' width='30'/></a>
+        <a href="#contact" className='hidden lg:flex items-center gap-5 font-Ovo  bg-slate-200 bg-opacity-30 rounded-3xl px-5 py-2 shadow-xl font-semibold text-red-600'>Contact<Image src={arrowRight} alt='' width='30'/></a>
         <button onClick={openMenuFunc} className='md:hidden'>
             <Image src={menu} alt='' width='30'/>
         </button>
       </div>
-
+      </nav>
 
 
       {/*  ----- Mobile Menu----    */ }
