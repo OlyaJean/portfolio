@@ -10,7 +10,9 @@ import webDevelopment from './../assets/web-development.png'
 import webDesign from './../assets/web-design.png'
 import uxUi from './../assets/ux-ui.png'
 import arrowRight from './../assets/arrowRight.png'
-import workBg from './../assets/work-bg.jpg'
+import arrowStraight from './../assets/arrowStraight.png'
+import arrowStraightWhite from './../assets/arrowStraightWhite.png'
+
 
 
 export const assets = {
@@ -26,7 +28,9 @@ export const assets = {
     webDevelopment,
     uxUi,
     arrowRight,
-    workBg
+    arrowStraight,
+    arrowStraightWhite
+   
 }
 export const myInfo = [
     { icon: assets.languages, title: "Languages", description: "HTML, CSS, JavaScript, React Js, Next Js" },
@@ -52,20 +56,20 @@ export const serviceData = [
 export const workData = [
     { 
         title: "The Infinite Expanse",
-        description: 'A Picture Of the Day (APOD) using NASA API including a random space fact.',
-        image: assets.workBg,
+        description: 'A Picture Of the Day (APOD) using NASA API and random space fact.',
+        image: '/work-bg.jpg',
         link: 'https://the-infinity-expanse.netlify.app/'
     },
     {
         title: 'Study Sprint',
         description: 'Manage your personal studing tasks with infinite Pomodoro clock.',
-        image: assets.workBg,
+        image: '/work-bg.jpg',
         link: 'https://study-sprint.netlify.app/'
     },
     {
         title: 'Avajah Pottery',
         description: 'A full-stack e-commerce website built using Next Js and MongoDB.',
-        image: assets.workBg,
+        image: '/work-bg.jpg',
         link: 'https://avajah.netlify.app/'
-    }
+    },
 ]
