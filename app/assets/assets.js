@@ -12,6 +12,7 @@ import uxUi from './../assets/ux-ui.png'
 import arrowRight from './../assets/arrowRight.png'
 import arrowStraight from './../assets/arrowStraight.png'
 import arrowStraightWhite from './../assets/arrowStraightWhite.png'
+import mail from './../assets/mail.png'
 
 
 
@@ -29,7 +30,8 @@ export const assets = {
     uxUi,
     arrowRight,
     arrowStraight,
-    arrowStraightWhite
+    arrowStraightWhite,
+    mail
    
 }
 export const myInfo = [

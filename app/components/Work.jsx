@@ -25,7 +25,7 @@ const Work = () => {
         ))}
       </div>
 
-      <a href="#contact" className='flex items-center gap-5 font-Ovo  bg-slate-100 bg-opacity-60 rounded-3xl px-5 py-2 border-[0.5px] border-gray-400 w-fit mx-auto hover:bg-lightHover duration-500 text-gray-700'>Show more<Image src={assets.arrowStraight} alt='' width='30'/></a>
+      <a href="#contact" className='flex items-center gap-2 text-sm md:text-sm  font-Ovo  bg-slate-100 bg-opacity-60 rounded-3xl px-5 py-2 border-[0.5px] border-gray-400 w-fit mx-auto hover:bg-lightHover duration-500 text-gray-700'>Show more<Image src={assets.arrowStraight} alt='' width='30'/></a>
  
     </div>
   )
