@@ -5,7 +5,7 @@
 * {
   font-family: "Ova";
 }
-html::before {
+/*html::before {
   content: "";
   display: block;
   background-image: url("./assets/bg1.jpg");
@@ -19,4 +19,4 @@ html::before {
   right: 0;
   position: fixed;
   z-index: -10;
-}
+}*/

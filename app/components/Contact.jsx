@@ -41,8 +41,8 @@ const Contact = () => {
   return (
     <div id='contact' className=' p-10 scroll-mt-20  bg-slate-300 rounded-3xl bg-opacity-40 shadow-xl mx-10 md:mx-20'>
 
-<h4 className='text-center text-2xl text-slate-700 mb-5'>Connect with me</h4>
-<h1 className='text-center text-4xl text-slate-700 mb-5 '><span className='text-red-600'>G</span>et in touch</h1>
+<h4 className='text-center text-2xl  mb-5'>Connect with me</h4>
+<h1 className='text-center text-4xl  mb-5 '><span className='text-red-600'>G</span>et in touch</h1>
 <p className='text-center max-w-4xl mx-auto'>Welcome to my web development portfolio! Explore a collection of projects showcasing my expertise in web development</p>
 
 <form onSubmit={onSubmit} className='max-w-2xl mx-auto'>

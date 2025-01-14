@@ -7,8 +7,8 @@ import { assets, myInfo, tools, toolsData } from '../assets/assets'
 const About = () => {
   return (
     <div id='about' className='mb-10 md:mb-20 p-10 scroll-mt-20  bg-slate-300 rounded-3xl bg-opacity-40 shadow-xl mx-10 md:mx-20'>
-        <h4 className='text-center text-2xl text-slate-700 mb-5'>Introduction</h4>
-        <h1 className='text-center text-4xl text-slate-700'><span className='text-red-600'>A</span>bout me</h1>
+        <h4 className='text-center text-2xl  mb-5'>Introduction</h4>
+        <h1 className='text-center text-4xl '><span className='text-red-600'>A</span>bout me</h1>
 
         <div className='flex flex-col lg:flex-row items-center  lg:items-center my-10'>
             <Image alt='' width='' src={me} className='rounded-3xl mb-5 lg:mr-10 w-[200px] lg:w-[300px]'/>
@@ -26,7 +26,7 @@ const About = () => {
                 ))}
             </ul>
 
-            <h4 className='my-4 ml-6 font-semibold text-gray-700 '>Tools I use:</h4>
+            <h4 className='my-4 ml-6 font-semibold '>Tools I use:</h4>
 
             <ul className='flex gap-5'>
                {toolsData.map((tool,index)=>(

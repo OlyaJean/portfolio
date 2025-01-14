@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -7,11 +8,12 @@ export default {
   ],
   theme: {
     extend: {
+    
       colors: {
       lightHover: '#fafcff',
       redHover:'#fad7e5',
       darkHover: '2a004a',
-      darkTheme: '#11001F'
+      darkTheme: '#353947'
       },
       fontFamily:{
         Outfit: ["Outfit", 'sans-serif'],

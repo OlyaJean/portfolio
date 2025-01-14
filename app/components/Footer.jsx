@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div>
       <div className='mt-10 md:mt-20 '>
-      <h1 className='text-center font-Outfit italic text-2xl md:text-4xl font-extrabold text-slate-700'><span className='text-red-500 text-4xl font-extrabold'>//</span>O<span className='text-red-500 text-5xl font-extrabold'>.</span>Jean <br className='leading-none'/> </h1>
+      <h1 className='text-center font-Outfit italic text-2xl md:text-4xl font-extrabold '><span className='text-red-500 text-4xl font-extrabold'>//</span>O<span className='text-red-500 text-5xl font-extrabold'>.</span>Jean <br className='leading-none'/> </h1>
       <div className='flex justify-center gap-3 mt-5'>
         <Image src={assets.mail} alt='' width='' className='w-6'/> olga_jb@yahoo.com
       </div>

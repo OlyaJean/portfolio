@@ -5,8 +5,8 @@ import Image from 'next/image'
 const Work = () => {
   return (
     <div id='work' className='mb-10 md:mb-20 p-10 scroll-mt-20  bg-slate-300 rounded-3xl bg-opacity-40 shadow-xl mx-10 md:mx-20'>
-       <h4 className='text-center text-2xl text-slate-700 mb-5'>My portfolio</h4>
-      <h1 className='text-center text-4xl text-slate-700 mb-5 '><span className='text-red-600'>M</span>y latest work</h1>
+       <h4 className='text-center text-2xl  mb-5'>My portfolio</h4>
+      <h1 className='text-center text-4xl  mb-5 '><span className='text-red-600'>M</span>y latest work</h1>
       <p className='text-center max-w-4xl mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, temporibus dignissimos, corporis impedit necessitatibus consectetur odio cupiditate voluptates sit tempora autem similique ab nemo facere incidunt nesciunt adipisci nihil repellat.</p>
 
       <div className='grid grid-cols-auto gap-5 my-10'>
@@ -25,7 +25,7 @@ const Work = () => {
         ))}
       </div>
 
-      <a href="#contact" className='flex items-center gap-2 text-sm md:text-sm  font-Ovo  bg-slate-100 bg-opacity-60 rounded-3xl px-5 py-2 border-[0.5px] border-gray-400 w-fit mx-auto hover:bg-lightHover duration-500 text-gray-700'>Show more<Image src={assets.arrowStraight} alt='' width='30'/></a>
+      <a href="#contact" className='flex items-center gap-2 text-sm md:text-sm  font-Ovo  bg-slate-100 bg-opacity-60 rounded-3xl px-5 py-2 border-[0.5px] border-gray-400 w-fit mx-auto hover:bg-lightHover duration-500 '>Show more<Image src={assets.arrowStraight} alt='' width='30'/></a>
  
     </div>
   )
