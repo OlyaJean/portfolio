@@ -1,3 +1,5 @@
+'use client'
+import { useState } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -8,10 +10,13 @@ import Work from "./components/Work";
 
 
 export default function Home() {
+
+  const [isDark, setIsDark] = useState(true)
+
   return (
     <div >
       <div className="h-screen">
-      <Navbar/>
+      <Navbar isDark={isDark}/>
       <Header/>
       </div>
       <About/>

@@ -2,11 +2,15 @@
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
 import arrowRight from './../assets/arrowRight.png'
+import arrowRightWhite from './../assets/arrowRightWhite.png'
 import moonBlack from './../assets/moonBlack.png'
+import moonWhite from './../assets/moonWhite.png'
 import menu from './../assets/menu.png'
+import menuWhite from './../assets/menuWhite.png'
 import close from './../assets/close.png'
+import closeWhite from './../assets/closeWhite.png'
 
-const Navbar = () => {
+const Navbar = ({isDark}) => {
 
     const [scrolled, setScrolled] = useState(false)
     const menuRef = useRef()
@@ -45,11 +49,11 @@ const Navbar = () => {
 
       <div className='flex gap-5 items-center lg:w-48'>
         <button>
-            <Image src={moonBlack} alt='' width='' className='w-7 md:w-8'/>
+            <Image src={isDark? moonWhite : moonBlack} alt='' width='' className='w-7 md:w-8'/>
         </button>
-        <a href="#contact" className='hidden lg:flex items-center gap-5 font-Ovo  bg-slate-100 bg-opacity-60 rounded-3xl px-5 py-2 border-[0.5px] border-gray-400 font-semibold text-red-600'>Contact<Image src={arrowRight} alt='' width='30'/></a>
+        <a href="#contact" className='hidden lg:flex items-center gap-5 font-Ovo  bg-slate-100 bg-opacity-60 rounded-3xl px-5 py-2 border-[0.5px] border-gray-400 font-semibold text-red-600'>Contact<Image src={isDark? arrowRightWhite : arrowRight} alt='' width='30'/></a>
         <button onClick={openMenuFunc} className='md:hidden'>
-            <Image src={menu} alt='' width='' className='w-7'/>
+            <Image src={isDark? menuWhite : menu} alt='' width='' className='w-7'/>
         </button>
       </div>
       </nav>
@@ -58,14 +62,14 @@ const Navbar = () => {
       {/*  ----- Mobile Menu----    */ }
 
 
-      <ul ref={menuRef} className='flex md:hidden flex-col gap-5 z-50 bg-neutral-100 p-5 rounded-[_24px_0_0_24px] shadow-xl fixed top-0 -right-60 bottom-0 h-screen w-60 transition duration-500'>
+      <ul ref={menuRef} className='flex md:hidden flex-col gap-5 z-50 bg-neutral-100 dark:bg-neutral-800 p-5 rounded-[_24px_0_0_24px] shadow-xl dark:shadow-neutral-600 fixed top-0 -right-60 bottom-0 h-screen w-60 transition duration-500'>
         <li onClick={closeMenuFunc} ><a href="#home">Home</a></li>
         <li onClick={closeMenuFunc} ><a href="#about">About me</a></li>
         <li onClick={closeMenuFunc} ><a href="#services">Services</a></li>
         <li onClick={closeMenuFunc} ><a href="#work">My work</a></li>
         <li onClick={closeMenuFunc} ><a href="#contact">Contact me</a></li>
         <button onClick={closeMenuFunc}>
-            <Image src={close} alt='' width='' className='absolute right-5 top-5 w-7'/>
+            <Image src={isDark? closeWhite : close} alt='' width='' className='absolute right-5 top-5 w-7'/>
         </button>
       </ul>
      
