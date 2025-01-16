@@ -10,7 +10,7 @@ import menuWhite from './../assets/menuWhite.png'
 import close from './../assets/close.png'
 import closeWhite from './../assets/closeWhite.png'
 
-const Navbar = ({isDark}) => {
+const Navbar = ({isDark,setIsDark}) => {
 
     const [scrolled, setScrolled] = useState(false)
     const menuRef = useRef()
@@ -39,7 +39,7 @@ const Navbar = ({isDark}) => {
       </a>
 
       <ul className={`hidden md:flex gap-5  px-5 py-3 rounded-3xl  ${scrolled ? "" : " bg-opacity-30 bg-slate-100 shadow-xl"}`}>
-        <li className='text-red-600'><a href="#home">Home</a></li>
+        <li className='text-red-600 font-semibold'><a href="#home">Home</a></li>
         <li ><a href="#about">About me</a></li>
         <li ><a href="#services">Services</a></li>
         <li ><a href="#work">My work</a></li>
@@ -48,7 +48,7 @@ const Navbar = ({isDark}) => {
 
 
       <div className='flex gap-5 items-center lg:w-48'>
-        <button>
+        <button onClick={()=> setIsDark(prev => !prev)}>
             <Image src={isDark? moonWhite : moonBlack} alt='' width='' className='w-7 md:w-8'/>
         </button>
         <a href="#contact" className='hidden lg:flex items-center gap-5 font-Ovo  bg-slate-100 bg-opacity-60 rounded-3xl px-5 py-2 border-[0.5px] border-gray-400 font-semibold text-red-600'>Contact<Image src={isDark? arrowRightWhite : arrowRight} alt='' width='30'/></a>

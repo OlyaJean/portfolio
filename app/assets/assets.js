@@ -10,9 +10,12 @@ import webDevelopment from './../assets/web-development.png'
 import webDesign from './../assets/web-design.png'
 import uxUi from './../assets/ux-ui.png'
 import arrowRight from './../assets/arrowRight.png'
+import arrowRightWhite from './../assets/arrowRightWhite.png'
 import arrowStraight from './../assets/arrowStraight.png'
 import arrowStraightWhite from './../assets/arrowStraightWhite.png'
 import mail from './../assets/mail.png'
+import mailWhite from './../assets/mailWhite.png'
+import downloadWhite from './../assets/downloadWhite.png'
 
 
 
@@ -31,7 +34,10 @@ export const assets = {
     arrowRight,
     arrowStraight,
     arrowStraightWhite,
-    mail
+    mail,
+    downloadWhite,
+    arrowRightWhite,
+    mailWhite
    
 }
 export const myInfo = [
@@ -51,7 +57,7 @@ export const serviceData = [
     },
     { icon: assets.webDevelopment, title: 'Web Development', description: 'Web development involves a combination of...', link: ''
     },
-    { icon: assets.uxUi, title: 'UX/UI Design', description: 'UX/UI together ensure that product is visually appealing and...', link: ''
+    { icon: assets.uxUi, title: 'UX/UI Design', description: 'UX/UI together ensure that product is visually appealing...', link: ''
     },
 ]
 

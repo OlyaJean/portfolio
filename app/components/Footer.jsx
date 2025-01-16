@@ -2,13 +2,13 @@ import Image from 'next/image'
 import React from 'react'
 import { assets } from '../assets/assets'
 
-const Footer = () => {
+const Footer = ({isDark}) => {
   return (
     <div>
       <div className='mt-10 md:mt-20 '>
       <h1 className='text-center font-Outfit italic text-2xl md:text-4xl font-extrabold '><span className='text-red-500 text-4xl font-extrabold'>//</span>O<span className='text-red-500 text-5xl font-extrabold'>.</span>Jean <br className='leading-none'/> </h1>
       <div className='flex justify-center gap-3 mt-5'>
-        <Image src={assets.mail} alt='' width='' className='w-6'/> olga_jb@yahoo.com
+        <Image src={isDark? assets.mailWhite : assets.mail} alt='' width='' className='w-7'/> olga_jb@yahoo.com
       </div>
       </div>
      

@@ -17,10 +17,10 @@ const About = () => {
 
             <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl '>
                 {myInfo.map(({icon,title,description}, index)=>(
-                    <li key={index} className='border-[0.5px] rounded-xl border-gray-400 p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 hover:bg-opacity-35 duration-500 hover:shadow-black'>
+                    <li key={index} className='border-[0.5px] rounded-xl border-gray-400 p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 hover:bg-opacity-35 duration-500 hover:shadow-black dark:hover:shadow-neutral-300'>
                         <Image alt={title} src={icon} width='' className='w-7 mt-3'/>
-                        <h3 className='my-4 font-semibold text-gray-700 '>{title}:</h3>
-                        <p className='text-gray-600 text-sm '>{description}</p>
+                        <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}:</h3>
+                        <p className='text-gray-600 text-sm dark:text-white'>{description}</p>
                     </li>
   
                 ))}
@@ -30,7 +30,7 @@ const About = () => {
 
             <ul className='flex gap-5'>
                {toolsData.map((tool,index)=>(
-                <li className='border-[0.5px] rounded-xl border-gray-400 p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 hover:bg-opacity-35 duration-500 hover:shadow-black'
+                <li className='border-[0.5px] rounded-xl border-gray-400 p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 hover:bg-opacity-35 duration-500 hover:shadow-black  dark:hover:shadow-neutral-300'
                  key={index}>
                     <Image src={tool} alt='ff' className='w-5 sm:w-7'/>
                 </li>

@@ -2,7 +2,7 @@ import React from 'react'
 import { assets, workData } from '../assets/assets'
 import Image from 'next/image'
 
-const Work = () => {
+const Work = ({isDark}) => {
   return (
     <div id='work' className='mb-10 md:mb-20 p-10 scroll-mt-20  bg-slate-300 rounded-3xl bg-opacity-40 shadow-xl mx-10 md:mx-20'>
        <h4 className='text-center text-2xl  mb-5'>My portfolio</h4>
@@ -25,7 +25,7 @@ const Work = () => {
         ))}
       </div>
 
-      <a href="#contact" className='flex items-center gap-2 text-sm md:text-sm  font-Ovo  bg-slate-100 bg-opacity-60 rounded-3xl px-5 py-2 border-[0.5px] border-gray-400 w-fit mx-auto hover:bg-lightHover duration-500 '>Show more<Image src={assets.arrowStraight} alt='' width='30'/></a>
+      <a href="#contact" className='flex items-center gap-2 text-sm md:text-sm  font-Ovo  bg-slate-100 dark:bg-slate-700 bg-opacity-60 rounded-3xl px-5 py-2 border-[0.5px] border-gray-400 dark:border-slate-700 w-fit mx-auto hover:bg-lightHover dark:hover:bg-black dark:duration-500 duration-500 '>Show more<Image src={isDark? assets.arrowStraightWhite : assets.arrowStraight} alt='' width='30'/></a>
  
     </div>
   )
