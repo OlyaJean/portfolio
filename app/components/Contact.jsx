@@ -39,7 +39,7 @@ const Contact = () => {
 
 
   return (
-    <div id='contact' className=' p-10 scroll-mt-20  bg-slate-300 rounded-3xl bg-opacity-40 shadow-xl mx-10 md:mx-20'>
+    <div id='contact' className=' p-10 scroll-mt-20  bg-slate-300  dark:bg-slate-500 dark:bg-opacity-40 rounded-3xl bg-opacity-40 shadow-xl mx-10 md:mx-20'>
 
 <h4 className='text-center text-2xl  mb-5'>Connect with me</h4>
 <h1 className='text-center text-4xl  mb-5 '><span className='text-red-600'>G</span>et in touch</h1>
@@ -52,7 +52,7 @@ const Contact = () => {
         <input name='emai' className='flex-1 p-3 outline-none border-[0.5px] border-gray-400  rounded-lg bg-white' type="email" placeholder='Enter your email' required/>
     </div>
     <textarea  rows='6' placeholder='Enter your message' required className='w-full p-4 outline-none border-[0.5px] border-gray-400 rounded-lg bg-white mb-5'></textarea>
-    <button type='submit' className='rounded-3xl px-5 py-2  w-max flex items-center justify-between gap-2 bg-slate-700 text-white  mx-auto hover:bg-black duration-500'>Submit now<Image src={assets.arrowStraightWhite} alt='' width='' className='w-5'/></button>
+    <button type='submit' className='rounded-3xl px-5 py-2  w-max flex items-center justify-between gap-2 bg-slate-800 text-white  mx-auto hover:bg-black duration-500'>Submit now<Image src={assets.arrowStraightWhite} alt='' width='' className='w-5'/></button>
 </form>
 <span>{result}</span>
     </div>
