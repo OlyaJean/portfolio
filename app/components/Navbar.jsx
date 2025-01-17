@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react'
 import arrowRight from './../assets/arrowRight.png'
 import arrowRightWhite from './../assets/arrowRightWhite.png'
 import moonBlack from './../assets/moonBlack.png'
-import moonWhite from './../assets/moonWhite.png'
+import sun from './../assets/sun.png'
 import menu from './../assets/menu.png'
 import menuWhite from './../assets/menuWhite.png'
 import close from './../assets/close.png'
@@ -49,7 +49,7 @@ const Navbar = ({isDark,setIsDark}) => {
 
       <div className='flex gap-5 items-center lg:w-48'>
         <button onClick={()=> setIsDark(prev => !prev)}>
-            <Image src={isDark? moonWhite : moonBlack} alt='' width='' className='w-7 md:w-8'/>
+            <Image src={isDark? sun : moonBlack} alt='' width='' className='w-7 md:w-8'/>
         </button>
         <a href="#contact" className='hidden lg:flex items-center gap-5 font-Ovo  bg-slate-100 dark:bg-slate-500 dark:bg-opacity-40  bg-opacity-60 rounded-3xl px-5 py-2 border-[0.5px] border-gray-400 font-semibold text-red-600'>Contact<Image src={isDark? arrowRightWhite : arrowRight} alt='' width='30'/></a>
         <button onClick={openMenuFunc} className='md:hidden'>
