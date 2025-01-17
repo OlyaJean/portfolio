@@ -62,7 +62,7 @@ const Navbar = ({isDark,setIsDark}) => {
       {/*  ----- Mobile Menu----    */ }
 
 
-      <ul ref={menuRef} className='flex md:hidden flex-col gap-5 z-50 bg-neutral-100 dark:bg-zinc-900 p-5 rounded-[_24px_0_0_24px] shadow-xl dark:shadow-neutral-600 fixed top-0 -right-60 bottom-0 h-screen w-60 transition duration-500'>
+      <ul ref={menuRef} className='flex md:hidden flex-col gap-5 z-50 bg-slate-200 dark:bg-zinc-900 p-5 rounded-[_24px_0_0_24px] shadow-xl dark:shadow-neutral-600 fixed top-0 -right-60 bottom-0 h-screen w-60 transition duration-500'>
         <li onClick={closeMenuFunc} ><a href="#home">Home</a></li>
         <li onClick={closeMenuFunc} ><a href="#about">About me</a></li>
         <li onClick={closeMenuFunc} ><a href="#services">Services</a></li>
