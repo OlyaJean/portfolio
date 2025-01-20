@@ -20,7 +20,7 @@ const Services = ({isDark}) => {
       initial={{y:-30, opacity:0}}
       whileInView={{y:0, opacity: 1}}
       transition={{duration:0.6, delay:0.3}}
-      className='text-center max-w-4xl mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, temporibus dignissimos, corporis impedit necessitatibus consectetur odio cupiditate voluptates sit tempora autem similique ab nemo facere incidunt nesciunt adipisci nihil repellat.</motion.p>
+      className='text-center max-w-4xl mx-auto'>I am a web developer from North Carolina, USA with experience in multiple areas.</motion.p>
 
       <motion.div
        initial={{y:30, opacity:0}}
@@ -30,13 +30,15 @@ const Services = ({isDark}) => {
 
        
             {serviceData.map(({icon,title,description,link} ,index)=>(
-                <div key={index} className='border-[0.5px] rounded-xl border-gray-400 p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 hover:bg-opacity-35 duration-500 hover:shadow-black dark:hover:shadow-neutral-300'>
+                <motion.div 
+                whileHover={{scale:1.05}}
+                key={index} className='border-[0.5px] rounded-xl border-gray-400 p-6 cursor-pointer hover:bg-lightHover hover:-translate-y-1 hover:bg-opacity-35 duration-500 hover:shadow-black dark:hover:shadow-neutral-300'>
                     <Image alt={title} width='' src={icon} className='w-7 mt-3'/>
                     <h3 className='my-4 font-semibold text-gray-700 dark:text-white'>{title}:</h3>
                     <p className='text-gray-600 dark:text-white leading-5 '>{description}</p>
                     <a href={link} className='flex items-center gap-1 text-gray-600 dark:text-white text-sm my-2'>read more <Image alt='arrow' width='' src={isDark? assets.arrowRightWhite : assets.arrowRight} className='w-5'/>
                     </a>
-                </div>
+                </motion.div>
             ))}
        
 

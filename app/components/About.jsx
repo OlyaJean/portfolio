@@ -27,7 +27,7 @@ const About = () => {
              initial={{y:-30, opacity:0}}
              whileInView={{y:0, opacity: 1}}
              transition={{duration:0.6, delay:0.3}}
-            className='flex-1 mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, temporibus dignissimos, corporis impedit necessitatibus consectetur odio cupiditate voluptates sit tempora autem similique ab nemo facere incidunt nesciunt adipisci nihil repellat.</motion.p>
+            className='flex-1 mb-5'>A web developer with expertise in front-end and back-end technologies, dedicated to crafting user-friendly and visually appealing websites that deliver a seamless experience across devices.</motion.p>
 
             <motion.ul
                initial={{y:-30, opacity:0}}
